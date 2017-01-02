@@ -26,11 +26,6 @@
 			<div class="slides">
 
 				<section data-background="splash2.svg">
-<!-- 					<h3><font color="000000">Computational thinking in undergraduate discrete mathematics using Python and Jupyter Notebooks</font></h3>
-					<h4><font color="#000000">MAA Contibuted Paper Session on Discrete Mathematics in the Undergraduate Curriculum -- Ideas and Innovations</font></h4>
-					<p>Robert Talbert, Department of Mathematics</p>
-					<p>Grand Valley State University</p>
-					<p>talbertr@gvsu.edu / @RobertTalbert / rtalbert.org</p> -->
 				</section>
 
 				<section>
@@ -39,13 +34,15 @@
 				</section>
 
 				<section>
-					<section data-background="#0065A4"><h2>How does (discrete) math work?</h2></section>
+					<section data-background="braincomputer1.jpg">
+						<h1><font color="yellow">Discrete math is computational</font></h1>
+					</section>
 					<section>
 						<h3>How many subsets does an $n$-element set have?</h3>
-						<p class="fragment">$\{0\} \rightarrow \emptyset, \{0\}$; $\{0,1\} \rightarrow \emptyset, \{0\}, \{1\}, \{0,1\}$, etc.</p>
+						<p class="fragment">$\emptyset \rightarrow \emptyset$; $\{x_0\} \rightarrow \emptyset, \{x_0\}$; $\{x_0, x_1\} \rightarrow \emptyset, \{x_0\}, \{x_1\}, \{x_0, x_1\}$, ...
 						<p class="fragment">Conjecture: For all $n \in \mathbb{N}$, a set with $n$ elements has $2^n$ subsets. </p>
 						<p class="fragment">WHY?</p>
-						<p class="fragment">(Induction) The empty set has 1 subset. If a $k$-element set has $2^k$ subsets for some $k$, then a $(k+1)$-element set has $2^k$ subsets with $x_{k+1}$ and $2^k$ subsets without $x_{k+1}$. Hence there are $2^{k+1}$ subsets with $k+1$ elements. 
+						<p class="fragment">(Induction) The empty set has 1 subset. If a $k$-element set has $2^k$ subsets for some $k$, then a $(k+1)$-element set has $2^k$ subsets with $x_{k+1}$ and $2^k$ subsets without $x_{k+1}$. Hence there are $2^{k+1}$ subsets with $k+1$ elements.
 <!-- 						<p class="fragment">Set up a bijection between elements of the set and $n$-bit strings, $x_i =1$ if $x_i$ is included in a subset and $x_i = 0$ otherwise.</p> -->
 					</section>
 				</section>
@@ -55,27 +52,25 @@
 				<h4 class="fragment"><font color="000000">Decomposition</font></h4>
 				<h4 class="fragment"><font color="000000">Pattern finding</font></h4>
 				<h4 class="fragment"><font color="000000">Abstraction</font></h4>
-				<h4 class="fragment"><font color="000000">Algorithm design</font> </h4>	
+				<h4 class="fragment"><font color="000000">Algorithm design</font> </h4>
 				<h4 class="fragment"><font color="000000">Algorithm $\leftrightarrow$ solution $\leftrightarrow$ explanation $\leftrightarrow$ proof</font></h4>
 				</section>
-				<section>
+				<!-- <section>
 					<img src="wing.png">
 					<p>Communications of the ACM, Vol. 49(3):33–35, <a href="http://dx.doi.org/10.1145/1118178.1118215">http://dx.doi.org/10.1145/1118178.1118215</a></p>
-				</section>
+				</section> -->
 				<section>
 					<a href="http://www.azquotes.com/quote/790453" title="Seymour Papert quote"><img src="http://www.azquotes.com/picture-quotes/quote-what-the-gears-cannot-do-the-computer-might-the-computer-is-the-proteus-of-machines-seymour-papert-79-4-0453.jpg" alt="What the gears cannot do the computer might. The computer is the Proteus of machines. Its essence is its universality, its power to simulate. - Seymour Papert"></a>
 				</section>
-				<section>
-					<h2>ENGINEERING :: GEARS</h2>					
+				<!-- <section>
+					<h2>ENGINEERING :: GEARS</h2>
 					<h2>BIOLOGY :: MICROSCOPE</h2>
 					<h2>ASTRONOMY :: TELESCOPE</h2>
 					<h2>MATHEMATICS :: COMPUTER</h2>
-				</section>		
-				<section data-background="#0065A4">
-					<h2>Discrete mathematics is fertile territory for engaging students in computational thinking, using the computer and programming.</h2>
-				</section>		
+				</section> -->
+
 				</section>
-				
+
 				<section data-background="#FFFFFF">
 					<h2 style="text-align: left">Python</h2>
 					<p style="text-align: left"><a href="http://python.org">http://python.org</a></p>
@@ -85,31 +80,46 @@
 					<p style="text-align: left"><a href="http://jupyter.org">http://jupyter.org</a></p>
 					<img src="jupyterpreview.png">
 				</section>
-				<section>
+				<!-- <section>
 					<img src="Jupyter-demo.gif">
-				</section>
+				</section> -->
 
 				<section>
 				<section data-background="#0065A4">
 				<h2><font color="FFFFFF">Using Python and Jupyter in discrete mathematics</font></h2>
+				<p><a href="http://bit.ly/ctdiscrete">http://bit.ly/ctdiscrete</a></p>
 				</section>
 				<section>
 					Example: Linear recurrence relation solver
-					<iframe src="rrsolver.html" width="1200" height="600"></iframe>
+					<iframe src="rrsolver.html" width="1200" height="500"></iframe>
+					<p><a href="http://bit.ly/ctdiscrete">http://bit.ly/ctdiscrete</a></p>
 				</section>
 				<section>
 					Exemplary student solution
-					<iframe src="rrsolver-solution.html" width="1200" height="600"></iframe>
+					<iframe src="rrsolver-solution.html" width="1200" height="500"></iframe>
+					<p><a href="http://bit.ly/ctdiscrete">http://bit.ly/ctdiscrete</a></p>
 				</section>
 				<section>
-					Example: Relationships between edges and nodes 
-					<img src="nodesedges.gif">
+					Diameters of complete bipartite graphs
+					<img src="diameter-frame.png" alt="Pair programming activity">
+					<p><a href="http://bit.ly/ctdiscrete">http://bit.ly/ctdiscrete</a></p>
 				</section>
 				<section>
-					<img src="edgesdegrees.gif">
+					<img src="diameter-demo.gif" alt="Diameter demo">
+				</section>
+
+
+				<!-- <section>
+					Example: Relationships between edges and nodes
+					<img src="nodesedges.gif" width="800" height="500">
+					<p><a href="http://bit.ly/ctdiscrete">http://bit.ly/ctdiscrete</a></p>
 				</section>
 				<section>
-					<h2>Other uses</h2> 
+					<img src="edgesdegrees.gif" width="720" height="600">
+					<p><a href="http://bit.ly/ctdiscrete">http://bit.ly/ctdiscrete</a></p>
+				</section> -->
+				<section>
+					<h2>Other uses</h2>
 					<h4>Writing code to implement set operations</h4>
 					<h4>Testing relations for properties</h4>
 					<h4>Clustering coefficients and centrality measures of large graphs</h4>
@@ -136,7 +146,7 @@
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'plugin/math/math.js', async: true }, 
+					{ src: 'plugin/math/math.js', async: true },
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
