@@ -34,15 +34,21 @@
 				</section>
 
 				<section>
+					<section data-background="math.jpg">
+						<h1><font color="lime">How does (discrete) mathematics work?</font></h1>
+					</section>
 					<section data-background="braincomputer1.jpg">
 						<h1><font color="yellow">Discrete math is computational</font></h1>
 					</section>
 					<section>
 						<h3>How many subsets does an $n$-element set have?</h3>
-						<p class="fragment">$\emptyset \rightarrow \emptyset$; $\{x_0\} \rightarrow \emptyset, \{x_0\}$; $\{x_0, x_1\} \rightarrow \emptyset, \{x_0\}, \{x_1\}, \{x_0, x_1\}$, ...
+						<p class="fragment">(<b>Decomposition</b>) $\emptyset \rightarrow \emptyset$; $\{x_0\} \rightarrow \emptyset, \{x_0\}$; $\{x_0, x_1\} \rightarrow \emptyset, \{x_0\}, \{x_1\}, \{x_0, x_1\}$, ...</p>
+						<p class="fragment">(<b>Pattern</b>) It's $2^n$!
 						<p class="fragment">Conjecture: For all $n \in \mathbb{N}$, a set with $n$ elements has $2^n$ subsets. </p>
-						<p class="fragment">WHY?</p>
-						<p class="fragment">(Induction) The empty set has 1 subset. If a $k$-element set has $2^k$ subsets for some $k$, then a $(k+1)$-element set has $2^k$ subsets with $x_{k+1}$ and $2^k$ subsets without $x_{k+1}$. Hence there are $2^{k+1}$ subsets with $k+1$ elements.
+						<h3 class="fragment"><font color="lime">WHY?</font></h3>
+					</section>
+					<section>
+						(Induction) The empty set has 1 subset. If a $k$-element set has $2^k$ subsets for some $k$, then a $(k+1)$-element set has $2^k$ subsets with $x_{k+1}$ and $2^k$ subsets without $x_{k+1}$. Hence there are $2^{k+1}$ subsets with $k+1$ elements.
 <!-- 						<p class="fragment">Set up a bijection between elements of the set and $n$-bit strings, $x_i =1$ if $x_i$ is included in a subset and $x_i = 0$ otherwise.</p> -->
 					</section>
 				</section>
@@ -53,7 +59,8 @@
 				<h4 class="fragment"><font color="000000">Pattern finding</font></h4>
 				<h4 class="fragment"><font color="000000">Abstraction</font></h4>
 				<h4 class="fragment"><font color="000000">Algorithm design</font> </h4>
-				<h4 class="fragment"><font color="000000">Algorithm $\leftrightarrow$ solution $\leftrightarrow$ explanation $\leftrightarrow$ proof</font></h4>
+				<h4 class="fragment"><font color="blue">Algorithm $\leftrightarrow$ solution $\leftrightarrow$ explanation $\leftrightarrow$ proof</font></h4>
+				<h4 class="fragment"><font color="green">Explain why / Show how</font></h4>
 				</section>
 				<!-- <section>
 					<img src="wing.png">
@@ -80,9 +87,9 @@
 					<p style="text-align: left"><a href="http://jupyter.org">http://jupyter.org</a></p>
 					<img src="jupyterpreview.png">
 				</section>
-				<!-- <section>
+				<section>
 					<img src="Jupyter-demo.gif">
-				</section> -->
+				</section>
 
 				<section>
 				<section data-background="#0065A4">
