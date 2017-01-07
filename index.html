@@ -42,13 +42,13 @@
 					</section>
 					<section>
 						<h3>How many subsets does an $n$-element set have?</h3>
-						<p class="fragment">(<b>Decomposition</b>) $\emptyset \rightarrow \emptyset$; $\{x_0\} \rightarrow \emptyset, \{x_0\}$; $\{x_0, x_1\} \rightarrow \emptyset, \{x_0\}, \{x_1\}, \{x_0, x_1\}$, ...</p>
-						<p class="fragment">(<b>Pattern</b>) It's $2^n$!
-						<p class="fragment">Conjecture: For all $n \in \mathbb{N}$, a set with $n$ elements has $2^n$ subsets. </p>
+						<p class="fragment">(<b><font color="lime">Decomposition</font></b>) $\emptyset \rightarrow \emptyset$; $\{x_0\} \rightarrow \emptyset, \{x_0\}$; $\{x_0, x_1\} \rightarrow \emptyset, \{x_0\}, \{x_1\}, \{x_0, x_1\}$, ...</p>
+						<p class="fragment">(<b><font color="lime">Pattern</font></b>) It's $2^n$!
+						<p class="fragment">(<font color="lime">Abstraction</font>) For all $n \in \mathbb{N}$, a set with $n$ elements has $2^n$ subsets. </p>
 						<h3 class="fragment"><font color="lime">WHY?</font></h3>
 					</section>
 					<section>
-						(Induction) The empty set has 1 subset. If a $k$-element set has $2^k$ subsets for some $k$, then a $(k+1)$-element set has $2^k$ subsets with $x_{k+1}$ and $2^k$ subsets without $x_{k+1}$. Hence there are $2^{k+1}$ subsets with $k+1$ elements.
+						(<font color="lime">Solution/Algorithm</font>) The empty set has 1 subset. If a $k$-element set has $2^k$ subsets for some $k$, then a $(k+1)$-element set has $2^k$ subsets with $x_{k+1}$ and $2^k$ subsets without $x_{k+1}$. Hence there are $2^{k+1}$ subsets with $k+1$ elements.
 <!-- 						<p class="fragment">Set up a bijection between elements of the set and $n$-bit strings, $x_i =1$ if $x_i$ is included in a subset and $x_i = 0$ otherwise.</p> -->
 					</section>
 				</section>
@@ -98,18 +98,18 @@
 				</section>
 				<section>
 					Example: Linear recurrence relation solver
-					<iframe src="rrsolver.html" width="1200" height="500"></iframe>
 					<p><a href="http://bit.ly/ctdiscrete">http://bit.ly/ctdiscrete</a></p>
+					<iframe src="rrsolver.html" width="1200" height="500"></iframe>
 				</section>
 				<section>
 					Exemplary student solution
-					<iframe src="rrsolver-solution.html" width="1200" height="500"></iframe>
 					<p><a href="http://bit.ly/ctdiscrete">http://bit.ly/ctdiscrete</a></p>
+					<iframe src="rrsolver-solution.html" width="1200" height="500"></iframe>
 				</section>
 				<section>
 					Diameters of complete bipartite graphs
-					<img src="diameter-frame.png" alt="Pair programming activity">
 					<p><a href="http://bit.ly/ctdiscrete">http://bit.ly/ctdiscrete</a></p>
+					<img src="diameter-frame.png" alt="Pair programming activity">
 				</section>
 				<section>
 					<img src="diameter-demo.gif" alt="Diameter demo">
@@ -127,11 +127,11 @@
 				</section> -->
 				<section>
 					<h2>Other uses</h2>
+					<p><a href="http://bit.ly/ctdiscrete">http://bit.ly/ctdiscrete</a></p>
 					<h4>Writing code to implement set operations</h4>
 					<h4>Testing relations for properties</h4>
 					<h4>Reverse-engineering the networkX diameter and clustering coefficient methods</h4>
 
-					<p><a href="http://bit.ly/ctdiscrete">http://bit.ly/ctdiscrete</a></p>
 				</section>
 				</section>
 				<section data-background="#0065A4">
